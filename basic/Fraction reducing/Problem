@@ -1,0 +1,30 @@
+Fraction Reducing
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Two natural numbers n and m are given. Reduce the following fraction , i.e. print p and q numbers such  and  is irreducible.
+
+The decision is ReduceFraction(n, m) function, input values are n and m and the.
+
+Input format
+Two natural numbers.
+
+Output format
+Return tuple of two numbers
+
+Sample 1
+Input	Output
+12
+16
+3 4
+Sample 2
+Input	Output
+7
+9
+7 9
+Sample 3
+Input	Output
+10
+100
+1 10
