@@ -1,0 +1,59 @@
+Frequency analysis
+Time limit	1 second
+Memory limit	64Mb
+Input	input.txt
+Output	standard output or output.txt
+Given the text. Print all the words in the text, one for each line. Words should be sorted in descending order of their appearance in the text, and at the same frequency of occurrence, in lexicographical order.
+
+Note.
+
+After you create a dictionary of all words, you will want to sort it by the frequency of occurrence of the word. The desired can be achieved if you create a list whose elements are tuples of two elements: the frequency of occurrence of the word and the word itself. For example, [(2, 'hi'), (1, 'what'), (3, 'is')]. Then the standard sort will sort the list of tuples, and the tuples are compared by the first element, and if they are equal, then by the second. This is almost what is required in the task.
+
+Input format
+Input the text
+
+Output format
+Output answer for the task
+
+Sample 1
+Input	Output
+hi
+hi
+what is your name
+my name is bond
+james bond
+my name is damme
+van damme
+claude van damme
+jean claude van damme
+damme
+is
+name
+van
+bond
+claude
+hi
+my
+james
+jean
+what
+your
+Sample 2
+Input	Output
+oh you touch my tralala
+mmm my ding ding dong
+ding
+my
+dong
+mmm
+oh
+touch
+tralala
+you
+Sample 3
+Input	Output
+ai ai ai ai ai ai ai ai ai ai
+ai
+Notes
+Important: Input from stdin is forbidden in that problem. Read input from the file "input.txt".
+
