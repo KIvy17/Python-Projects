@@ -1,0 +1,12 @@
+free, n = map(int, input().split())
+s = []
+count = 0
+for el in range(n):
+    el = int(input())
+    s.append(el)
+s = sorted(s)
+for i in range(n):
+    if free - s[i] >= 0 and s[i] != 0:
+        free = free - s[i]
+        count += 1
+print(count)
