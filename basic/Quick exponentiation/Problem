@@ -1,0 +1,28 @@
+Quick exponentiation *
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+You can raise the power much faster than in n multiplications! Use the following recurrence relations: a n = (a 2) n / 2 with even n, a n = a cdot a n-1 for odd n. Implement a quick exponentiation algorithm. If you do everything right, then the complexity of your algorithm will be O ( log n).
+
+Input format
+Input a real number a and an integer n
+
+Output format
+Output answer for the task
+
+Sample 1
+Input	Output
+2
+1
+2
+Sample 2
+Input	Output
+2
+2
+4
+Sample 3
+Input	Output
+2
+3
+8
