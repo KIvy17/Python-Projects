@@ -1,0 +1,29 @@
+file = open('input.txt', 'r', encoding='utf8')
+max_9 = 0
+max_10 = 0
+max_11 = 0
+k1 = 0
+k2 = 0
+k3 = 0
+sp = [max_9, max_10, max_11]
+rows = file.readline()
+while rows:
+    row = rows.split()
+    if row[2] == '9':
+        max_9 += int(row[3])
+        sp[0] = max_9
+        k1 += 1
+    if row[2] == '10':
+        max_10 += int(row[3])
+        sp[1] = max_10
+        k2 += 1
+    if row[2] == '11':
+        max_11 += int(row[3])
+        sp[2] = max_11
+        k3 += 1
+    rows = file.readline()
+file.close()
+sp[0] = sp[0] / k1
+sp[1] = sp[1] / k2
+sp[2] = sp[2] / k3
+print(*sp)
