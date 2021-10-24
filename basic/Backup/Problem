@@ -1,0 +1,30 @@
+Backup
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+The system administrator remembered that he had not done an archive of user files for a long time. However, the amount of disk where he can put the archive may be less than the total amount of files being archived.
+
+It is known how much disk space the files of each user occupy.
+
+Write a program that with given information about users and free space on the archive disk, will determine the maximum number of users whose data can be archived, while using the free space as fully as possible.
+
+Input format
+The program gets the number S - the amount of free disk space (natural, does not exceed 10,000), and the number N - the number of users (natural, does not exceed 100), then N numbers - the data amount of each user (natural, does not exceed 1000), each recorded on a separate line.
+
+Output format
+Print the largest number of users whose data may be placed in the archive.
+
+Sample 1
+Input	Output
+100 2
+200
+50
+1
+Sample 2
+Input	Output
+100 3
+50
+30
+50
+2
