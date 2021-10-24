@@ -1,0 +1,14 @@
+n = int(input())
+all_numb = set(range(1, n + 1))
+while True:
+    guess = input()
+    if guess == 'HELP':
+        break
+    guess = {int(x) for x in guess.split()}
+    answer = input()
+    if answer == 'YES':
+        all_numb &= guess
+    else:
+        all_numb -= guess
+all_numb = sorted(all_numb)
+print(*all_numb)
