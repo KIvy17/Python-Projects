@@ -1,0 +1,14 @@
+from collections import Counter
+with open('input.txt', 'r') as ifile:
+    tek = ifile.read()
+slova = []
+for word in tek.split():
+    clear_w = ''
+    for letter in word:
+        if letter.isalpha():
+            clear_w += letter.lower()
+    slova.append(clear_w)
+counter = Counter(slova)
+pairs = [(-pair[1], pair[0]) for pair in counter.most_common()]
+words = [pair[1] for pair in sorted(pairs)]
+print('\n'.join(words))
