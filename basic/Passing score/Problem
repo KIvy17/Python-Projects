@@ -1,0 +1,42 @@
+Passing score
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+To enter the university, the applicant must submit the results of three exams in the form of the Unified State Exam, each of which is assessed by an integer from 0 to 100 points. At the same time, applicants who score less than 40 points (unsatisfactory grade) for any exam are eliminated from the competition. The remaining applicants participate in the competition on the amount of points for three exams.
+
+The competition involves N people, with the number of position equal to K. Determine the passing score, that is, the number of points that the number of participants who scored the same or more points does not exceed K, and if you add applicants who have scored the highest number of non-admitted students, the total number of enrolled applicants will be greater than K.
+
+Input format
+The program receives the number of positions K. Next, the lines with information about applicants, each of which consists of a name (a text string containing an arbitrary number of spaces) and three numbers from 0 to 100, separated by spaces.
+
+Output format
+The program should display a passing score in the competition. The value should be the minimum score that the applicant enrolled in the competition.
+
+There are also two possible situations where the passing score is not defined. If all applicants who do not have unsatisfactory grades are enrolled, the program should output the number 0. If the number of applicants having an equal maximum score is greater than K, the program should output the number 1.
+
+Sample 1
+Input	Output
+5
+Иванов Сергей 70 70 70
+Сергеев Петр 100 100 0
+Петров Василий 70 60 70
+Васильев Андрей 70 60 70
+Андреев Денис 100 30 100
+Денисов Роман 50 50 50
+Романов Иван 60 70 70
+Ким Чен Ир 50 50 50
+Ким Ир Сен 40 40 40
+200
+Sample 2
+Input	Output
+1
+Иванов Сергей 40 40 40
+Сергеев Петр 100 100 39
+0
+Sample 3
+Input	Output
+1
+Иванов Сергей 60 60 60
+Сергеев Петр 100 40 40
+1
