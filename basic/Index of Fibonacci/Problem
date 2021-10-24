@@ -1,0 +1,38 @@
+Index of Fibonacci Number
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+The Fibonacci sequence is defined as follows:
+
+
+Given a natural number A. Determine the index of Fibonacci number, i.e print a number n such
+
+Fn = A
+
+If A is not a Fibonacci number, print -1 number.
+
+Input format
+A as natural number
+
+Output format
+A task answer.
+
+Sample 1
+Input	Output
+8
+
+6
+
+Sample 2
+Input	Output
+10
+
+-1
+
+Sample 3
+Input	Output
+13
+
+7
+
