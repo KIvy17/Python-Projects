@@ -1,0 +1,147 @@
+Implement the Matrix class. It should contain:
+
+Constructor from the list of lists. It is guaranteed that the lists not empty and all have the same size. 
+The constructor should copy the contents of the list of lists, so the original list and matrix class are independent.
+The __str__ method. Method converts a matrix to a string. 
+At the same time, elements within one line should be separated by tabs, and lines by line break 
+Also after each line there should not be a tab character and at the end there should not be a line break.
+The size method with no arguments, returning a tuple (number of rows, number of columns)
+You should provide only the file containing the class description and the line outside the class (as the main program): exec (stdin.read ())
+
+And at the beginning of the file: from sys import stdin
+
+To test the class, you can insert the code from the examples or write your own code instead of the line exec(stdin.read ()).
+
+Input format
+The source code of the testing program in the Python language is entered.
+
+Sample 1
+Input	Output
+# Task 1 check 1
+m = Matrix([[1, 0], [0, 1]])
+print(m)
+m = Matrix([[2, 0, 0], [0, 1, 10000]])
+print(m)
+m = Matrix([[-10, 20, 50, 2443], [-5235, 12, 4324, 4234]])
+print(m)
+1	0
+0	1
+2	0	0
+0	1	10000
+-10	20	50	2443
+-5235	12	4324	4234
+Sample 2
+Input	Output
+# Task 1 check 2
+m1 = Matrix([[1, 0, 0], [1, 1, 1], [0, 0, 0]])
+m2 = Matrix([[1, 0, 0], [1, 1, 1], [0, 0, 0]])
+print(str(m1) == str(m2))
+True
+Sample 3
+Input	Output
+# Task 1 check 3
+m = Matrix([[1, 1, 1], [0, 100, 10]])
+print(str(m) == '1\t1\t1\n0\t100\t10')
+True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add the following methods to the previous class:
+
+__add__ accepts the second matrix of the same size and returns the sum of the matrices
+__mul__ accepts a number of type int or float and returns a matrix multiplied by a scalar
+__rmul__ doing the same thing as __mul__. This method will be called if the argument is on the right. You can write __rmul__ = __mul__ For example:
+In this case, it will call __mul__: Matrix ([[0, 1], [1, 0]) * 10
+
+In this case, it will call __rmul__ : 10 * Matrix ([[0, 1], [1, 0])
+
+Of course, these methods should not change the contents of the matrix.
+
+Sample 1
+Input	Output
+# Task 2 check 1
+m = Matrix([[10, 10], [0, 0], [1, 1]])
+print(m.size())
+(3, 2)
+Sample 2
+Input	Output
+# Task 2 check 2
+m1 = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+m2 = Matrix([[0, 1, 0], [20, 0, -1], [-1, -2, 0]])
+print(m1 + m2)
+1	1	0
+20	1	-1
+-1	-2	1
+Sample 3
+Input	Output
+# Task 2 check 3
+m = Matrix([[1, 1, 0], [0, 2, 10], [10, 15, 30]])
+alpha = 15
+print(m * alpha)
+print(alpha * m)
+15	15	0
+0	30	150
+150	225	450
+15	15	0
+0	30	150
+150	225	450
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add the MatrixError class to the program from task B with matrix1 and matrix2 (matrix references).
+
+The following changes are made to the Matrix class:
+
+Add to the __add__ check for errors in matrix sizes. In case of error throw MatrixError exception so that matrix1 is first argument of __add__ and matrix2 is the second
+Implement a transpose method that transposes the matrix and returns the result (this method modifies an instance of the Matrix class)
+Implement static transposed method, that receives Matrix and returning the transposed Matrix. Example(https://docs.python.org/2/library/functions.html#staticmethod)
+Sample 1
+Input	Output
+# Task 3 check 1
+# Check exception to add method
+m1 = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+m2 = Matrix([[0, 1, 0], [20, 0, -1], [-1, -2, 0]])
+print(m1 + m2)
+
+m2 = Matrix([[0, 1, 0], [20, 0, -1]])
+try:
+    m = m1 + m2
+    print('WA\n' + str(m))
+except MatrixError as e:
+    print(e.matrix1)
+    print(e.matrix2)
+1	1	0
+20	1	-1
+-1	-2	1
+1	0	0
+0	1	0
+0	0	1
+0	1	0
+20	0	-1
+Sample 2
+Input	Output
+# Task 3 check 2
+m = Matrix([[10, 10], [0, 0], [1, 1]])
+print(m)
+m1 = m.transpose()
+print(m)
+print(m1)
+10	10
+0	0
+1	1
+10	0	1
+10	0	1
+10	0	1
+10	0	1
+Sample 3
+Input	Output
+# Task 3 check 3
+m = Matrix([[10, 10], [0, 0], [1, 1]])
+print(m)
+print(Matrix.transposed(m))
+print(m)
+10	10
+0	0
+1	1
+10	0	1
+10	0	1
+10	10
+0	0
+1	1
+(TBD)
