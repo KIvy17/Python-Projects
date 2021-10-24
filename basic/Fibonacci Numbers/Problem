@@ -1,0 +1,34 @@
+Fibonacci Numbers
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+The Fibonacci sequence is defined as follows:
+
+
+For a given number n, determine the n-th Fibonacci number.
+
+Input format
+Natural number n.
+
+Output format
+A task answer.
+
+Sample 1
+Input	Output
+6
+
+8
+
+Sample 2
+Input	Output
+2
+
+1
+
+Sample 3
+Input	Output
+3
+
+2
+
