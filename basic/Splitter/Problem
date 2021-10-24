@@ -1,0 +1,62 @@
+"Splitter" is an tool which converts natural numbers. It has two commands: "Subtract 1" and "Divide by 2". The first command reduces the number by 1, the second command reduces the number twice if it is even otherwise an error occurs.
+
+Given two natural numbers A and B (A> B). Write an algorithm for the "Splitter" that converts the number A in the number B and at the same time contains the minimum number of commands. The algorithm commands must be output by one per line, the first command is denoted as -1, the second command as :2.
+
+Input format
+Two natural numbers A and B
+
+Output format
+A task answer.
+
+Sample 1
+Input	Output
+179
+20
+
+-1
+:2
+-1
+:2
+:2
+-1
+-1
+
+Sample 2
+Input	Output
+1024
+1
+
+:2
+:2
+:2
+:2
+:2
+:2
+:2
+:2
+:2
+:2
+
+Sample 3
+Input	Output
+1023
+1
+
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
+-1
+:2
