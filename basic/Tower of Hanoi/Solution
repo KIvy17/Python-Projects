@@ -1,0 +1,10 @@
+def move(n, x, y):
+    if n > 0:
+        tmp = 6 - x - y
+        move(n-1, x, tmp)
+        print(n, x, y)
+        move(n-1, tmp, y)
+
+
+n1 = int(input())
+move(n1, 1, 3)
