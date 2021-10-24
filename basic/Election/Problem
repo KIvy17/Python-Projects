@@ -1,0 +1,62 @@
+Election
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+In the election of the President of the Russian Federation, a candidate with more then half of the votes wins. 
+If there is no such candidate, then two candidates with the highest number of votes go to the second round of elections.
+
+Input format
+Each line of the input file contains the name of the candidate for which one voter voted. 
+It is known that the total number of candidates does not exceed 20, the list of candidates is not explicitly specified.
+
+Output format
+If there is a candidate who receives more than 50 percent of the votes, the program should display his name. 
+If there is no such candidate, the program should print the name of the candidate who took the first place, then the name of the candidate who took the second place.
+
+Sample 1
+Input	Output
+Полуэкт Варфоломеев
+Варфоломей Полуэктов
+Полуэкт Варфоломеев
+Полуэкт Варфоломеев
+Sample 2
+Input	Output
+Полуэкт Варфоломеев
+Варфоломей Виссарионов
+Виссарион Полуэктов
+Варфоломей Виссарионов
+Варфоломей Виссарионов
+Полуэкт Варфоломеев
+Варфоломей Виссарионов
+Полуэкт Варфоломеев
+Sample 3
+Input	Output
+Полуэкт Варфоломеев
+Варфоломей Виссарионов
+Виссарион Полуэктов
+Полуэкт Варфоломеев
+Варфоломей Виссарионов
+Варфоломей Виссарионов
+Полуэкт Варфоломеев
+Ким Чен Ир
+Ким Ир Сен
+Полуэкт Варфоломеев
+Полуэкт Варфоломеев
+Ким Чен Ир
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Ир Сен
+Ким Чен Ир
+Ким Ир Сен
