@@ -1,0 +1,34 @@
+Most frequent word
+Time limit	1 second
+Memory limit	64Mb
+Input	input.txt
+Output	standard output or output.txt
+Find the most frequent word in the text and print it out lowercase. Words in text are separated by spaces. Text contains punctuation symbols.
+
+Input format
+Input text. Text consists of english words, punctuation symbols and spaces. Text may contain several lines.
+
+Output format
+Single word lowercase
+
+If answer consists of several words print them all in alphabetical order with space as delimiter
+
+Sample 1
+Input	Output
+'As much as you look like yourself.' said Horatio.
+as
+Sample 2
+Input	Output
+'Stop! Speak! Speak! I command you to speak!' Horatio yelled.
+speak
+Sample 3
+Input	Output
+'The same thing, that looks like the late King!' Bernardo whispered.
+the
+Notes
+Text contains punctuation symbols. So you should check that you code treats following cases as the same word:
+
+Hello = hello = hello, = "hello"
+
+Important: Input from stdin is forbidden in this problem. Read input from the file "input.txt".
+
