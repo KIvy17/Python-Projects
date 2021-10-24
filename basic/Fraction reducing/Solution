@@ -1,0 +1,12 @@
+def reduce_fraction(n, m):
+    def gdc(a, b):
+        while a % b:
+            a, b = b, a % b
+        return b
+    g = gdc(n, m)
+    return int(n / g), int(m / g)
+
+
+a1 = int(input())
+b1 = int(input())
+print(*reduce_fraction(a1, b1))
