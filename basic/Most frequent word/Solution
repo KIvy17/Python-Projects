@@ -1,0 +1,14 @@
+from collections import Counter
+with open('input.txt', 'r') as ifile:
+    tek = ifile.read()
+slova = []
+for word in tek.split():
+    clear_w = ''
+    for letter in word:
+        if letter.isalpha():
+            clear_w += letter.lower()
+    slova.append(clear_w)
+sp = dict(Counter(slova))
+v = list(sp.values())
+k = list(sp.keys())
+print(k[v.index(max(v))])
