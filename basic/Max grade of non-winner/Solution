@@ -1,0 +1,32 @@
+file = open('input.txt', 'r', encoding='utf8')
+max_9 = []
+max_10 = []
+max_11 = []
+sp = [0, 0, 0]
+rows = file.readline()
+while rows:
+    row = rows.split()
+    if row[2] == '9':
+        max_9.append(int(row[3]))
+    if row[2] == '10':
+        max_10.append(int(row[3]))
+    if row[2] == '11':
+        max_11.append(int(row[3]))
+    rows = file.readline()
+file.close()
+max_9 = sorted(max_9, reverse=True)
+for i in range(len(max_9)):
+    if max_9[i] != max_9[0]:
+        sp[0] = max_9[i]
+        break
+max_10 = sorted(max_10, reverse=True)
+for i in range(len(max_10)):
+    if max_10[i] != max_10[0]:
+        sp[1] = max_10[i]
+        break
+max_11 = sorted(max_11, reverse=True)
+for i in range(len(max_11)):
+    if max_11[i] != max_11[0]:
+        sp[2] = max_11[i]
+        break
+print(*sp)
