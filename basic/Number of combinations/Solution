@@ -1,0 +1,14 @@
+def facto(f):
+    n = 1
+    for i in range(2, f + 1):
+        n *= i
+    return n
+
+
+def C(n, k):
+    return facto(n) // (facto(k) * facto(n - k))
+
+
+x = int(input())
+z = int(input())
+print(C(x, z))
