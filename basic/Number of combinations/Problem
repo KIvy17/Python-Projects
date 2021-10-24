@@ -1,0 +1,30 @@
+Number of Combinations
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Given the numbers n and k (0 ≤ k ≤ n). Calculate Cnk. Use a recurrent relationship for the solution.
+
+Input format
+Integers n and k.
+
+Output format
+A task answer.
+
+Sample 1
+Input	Output
+4
+2
+6
+Sample 2
+Input	Output
+4
+3
+4
+Sample 3
+Input	Output
+4
+1
+4
+Notes
+Cnk = Cn-1k-1 + Cn-1k.
