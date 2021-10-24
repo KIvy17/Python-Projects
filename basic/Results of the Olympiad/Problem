@@ -1,0 +1,36 @@
+Results of the olympiad
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+N people participated in the competition. Each received a certain number of points, while it turned out that all participants had a different number of points.
+
+Sort the list of participants in descending order by number of points.
+
+Sample 1
+Input	Output
+3
+Ivanov 15
+Petrov 10
+Sidorov 20
+Sidorov
+Ivanov
+Petrov
+Sample 2
+Input	Output
+3
+Ivanov 15
+Petrov 20
+Sidorov 10
+Petrov
+Ivanov
+Sidorov
+Sample 3
+Input	Output
+3
+Ivanov 10
+Petrov 15
+Sidorov 20
+Sidorov
+Petrov
+Ivanov
