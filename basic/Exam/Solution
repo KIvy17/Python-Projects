@@ -1,0 +1,15 @@
+n = int(input())
+accs = {}
+for i in range(n):
+    word = input()
+    base = word.lower()
+    if base not in accs:
+        accs[base] = set()
+    accs[base].add(word)
+err = 0
+sent = input().split()
+for word in sent:
+    base = word.lower()
+    if (base in accs and word not in accs[base] or len([i for i in word if i.isupper()]) != 1):
+        err += 1
+print(err)
