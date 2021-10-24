@@ -1,0 +1,40 @@
+Average grade
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+Determine and output the average points of the participants of the Olympiad in 9th grade, in 10th grade, in 11th grade from previous task.
+
+Sample 1
+Input	Output
+Иванов Сергей 9 90
+Сергеев Петр 10 91
+Петров Василий 11 92
+Васильев Иван 9 93
+91.5 91.0 92.0
+Sample 2
+Input	Output
+Егоров Павел 11 30
+Кострикова Анна 9 49
+Туаршев Тенгиз 9 91
+Кузьмин Александр 11 99
+Перочинская Виктория 11 53
+Лебедев Дмитрий 11 29
+Гольсков Алексей 11 92
+Васильева Александра 11 41
+Медведев Дмитрий 10 86
+Аптараули Алексей 9 51
+63.6666666667 86.0 57.3333333333
+Sample 3
+Input	Output
+Егоров Павел 9 0
+Кострикова Анна 9 0
+Туаршев Тенгиз 9 0
+Кузьмин Александр 9 0
+Перочинская Виктория 9 0
+Лебедев Дмитрий 9 0
+Гольсков Алексей 9 0
+Васильева Александра 9 0
+Медведев Дмитрий 10 0
+Аптараули Алексей 11 0
+0.0 0.0 0.0
