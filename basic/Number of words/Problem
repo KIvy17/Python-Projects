@@ -1,0 +1,32 @@
+Number of the word
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+In the input file (you can read data from the file input.txt) written text. 
+A word is a sequence of non-blank characters in a row, words separated by one or more spaces or line breaks.
+For each word in this text, calculate how many times it has been in this text before.
+
+Input format
+Input the text
+
+Output format
+Output answer for the task
+
+Sample 1
+Input	Output
+one two one tho three
+
+0 0 1 0 0 
+Sample 2
+Input	Output
+She sells sea shells on the sea shore;
+The shells that she sells are sea shells I'm sure.
+So if she sells sea shells on the sea shore,
+I'm sure that the shells are sea shore shells.
+
+0 0 0 0 0 0 1 0 0 1 0 0 1 0 2 2 0 0 0 0 1 2 3 3 1 1 4 0 1 0 1 2 4 1 5 0 0 
+Sample 3
+Input	Output
+aba aba; aba @?"
+0 0 1 0 
