@@ -1,0 +1,40 @@
+Tower of Hanoi
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+“Tower of Hanoi” puzzle consists of three rods, numbered with numbers 1, 2, 3. A pyramid of n disks is put on 1st rod with different diameters in ascending order. Disks can be shifted from one rod to another one by one, and the disc cannot be placed on a disk of smaller diameter. It is necessary to shift the entire pyramid from rod 1st to rod 3rd for the minimum rearrangements number.
+
+Write a program that solves the puzzle. For a given number of disks n prints a sequence of shifts in following format: a b c, where a is the number of the disk being moved, b is the number of the rod from which this disc is being removed, c is the number of the rod on which this disc is put on.
+
+For example, the line 1 2 3 means moving the disk number 1 from the rod 2 on rod 3. One command is printed on one line. The disks are numbered from 1 to n in ascending order of diameter.
+
+The program should print the minimum by the number of operations performed method of shifting the pyramid from a given number of disks.
+
+Write the function move (n, x, y), which prints a series of disk shifts to move the pyramid of height n from the rod number x to the rod number y.
+
+Sample 1
+Input	Output
+2
+1 1 2
+2 1 3
+1 2 3
+Sample 2
+Input	Output
+3
+1 1 3
+2 1 2
+1 3 2
+3 1 3
+1 2 1
+2 2 3
+1 1 3
+Sample 3
+Input	Output
+1
+1 1 3
+Notes
+Think about how to shift the pyramid from one disk? From two disks? From three disks and etc.?
+
+Suppose we have already learned to shift the pyramid from n disks from an arbitrary rod to any other. How to shift the pyramid from n + 1 disks, if you can use the solution for n disks?
+
