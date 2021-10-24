@@ -1,0 +1,10 @@
+iFile = open('input.txt', 'r', encoding='utf8')
+outFile = open('output.txt', 'w', encoding='utf8')
+wordcounts = {}
+for line in iFile:
+    words = line.strip().split()
+    for word in words:
+        wordcounts[word] = wordcounts.get(word, 0) + 1
+        print(wordcounts[word] - 1, end=' ', file=outFile)
+iFile.close()
+outFile.close()
