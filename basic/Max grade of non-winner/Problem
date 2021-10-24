@@ -1,0 +1,44 @@
+Max grade of not-winner
+Time limit	1 second
+Memory limit	64Mb
+Input	standard input or input.txt
+Output	standard output or output.txt
+The test is held separately in each class. The winners of the competition are students who scored the highest score among all participants in this class.
+
+For each class, determine the maximum score of the student who did not win in this class.
+
+Sample 1
+Input	Output
+Иванов Сергей 9 80
+Сергеев Петр 10 82
+Петров Василий 11 82
+Васильев Андрей 9 81
+Андреев Александр 10 81
+Александров Роман 9 81
+Романов Иван 11 83
+80 81 82
+Sample 2
+Input	Output
+Иванов Сергей 9 0
+Сергеев Петр 10 1
+Васильев Андрей 9 1
+Андреев Александр 10 0
+Александров Роман 11 2
+Петров Василий 11 1
+0 0 1
+Sample 3
+Input	Output
+Иванов Сергей 9 10
+Сергеев Петр 10 20
+Петров Василий 11 40
+Васильев Андрей 9 11
+Андреев Александр 10 15
+Александров Роман 9 8
+Романов Иван 11 30
+Алексеев Сергей 9 11
+Егоров Николай 9 12
+Николаев Степан 11 30
+Степанов Гаврила 10 20
+Гаврилов Виктор 11 30
+Викторов Павел 11 35
+11 15 35
