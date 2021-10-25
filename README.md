@@ -1,2 +1,2 @@
-# Py1Year
+# Python
 Problems solved via Python
